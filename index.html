@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String Manipulation</title>
+<script>
+	function alphaOnly(event) {
+  var key = event.keyCode;
+  return ((key > 64 && key < 91) || (key > 96 && key < 123) || key == 8);
+};
+</script>
+</head>
+<body>
+<h1>String Manipulation</h1>
+
+<input type="text" name="userInput" id="userInput" onkeypress="return alphaOnly(event)">
+
+<button id="Enter">Enter</button>
+<div id="return">
+	
+</div>
+
+
+<script type="text/javascript" src="strings.js"></script>
+</body>
+</html>
